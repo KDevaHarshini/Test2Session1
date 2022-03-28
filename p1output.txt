@@ -18,7 +18,7 @@ Reading symbols from a.out...done.
 (gdb) b main
 Breakpoint 1 at 0x8f0: file p1original.c, line 17.
 (gdb) r
-Starting program: /home/runner/Test2Session1-1/a.out 
+Starting program: /home/runner/Test2Session1-5/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
 Breakpoint 1, main () at p1original.c:17
@@ -26,8 +26,8 @@ Breakpoint 1, main () at p1original.c:17
 (gdb) n
 19    input(&x1,&y1,&x2,&y2);
 (gdb) s
-input (x1=0x7ffeb7e26984, y1=0x7ffeb7e26988, x2=0x7ffeb7e2698c, 
-    y2=0x7ffeb7e26990) at p1original.c:5
+input (x1=0x7ffd637dfb14, y1=0x7ffd637dfb18, x2=0x7ffd637dfb1c, 
+    y2=0x7ffd637dfb20) at p1original.c:5
 5     printf("Enter four numbers:\n");
 (gdb) n
 Enter four numbers:
@@ -39,18 +39,18 @@ Enter four numbers:
 2
 7   }
 (gdb) p x1
-$1 = (float *) 0x7ffeb7e26984
+$1 = (float *) 0x7ffd637dfb14
 (gdb) p y1
-$2 = (float *) 0x7ffeb7e26988
+$2 = (float *) 0x7ffd637dfb18
 (gdb) p x2
-$3 = (float *) 0x7ffeb7e2698c
+$3 = (float *) 0x7ffd637dfb1c
 (gdb) p y2
-$4 = (float *) 0x7ffeb7e26990
+$4 = (float *) 0x7ffd637dfb20
 (gdb) n
 main () at p1original.c:21
 21    find_distance(x1,y1,x2,y2,&area);
 (gdb) s
-find_distance (x1=1, y1=1, x2=2, y2=2, area=0x7ffeb7e26994) at p1original.c:10
+find_distance (x1=1, y1=1, x2=2, y2=2, area=0x7ffd637dfb24) at p1original.c:10
 10    *area = sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
 (gdb) n
 11  }
@@ -69,8 +69,7 @@ The area with 1.0000001.0000002.0000002.000000 is 1.414214
 main () at p1original.c:23
 23    return 0;
 (gdb) n
-24  }
-(gdb) c
+24  }(gdb) c
 Continuing.
-[Inferior 1 (process 3290) exited normally]
+[Inferior 1 (process 969) exited normally]
 (gdb) 
