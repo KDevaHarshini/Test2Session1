@@ -17,16 +17,16 @@ int find_fibo(int n)
       a = b;
       b = fibo + b;
     }
-return fibo;
-} 
+  return fibo;
+}
 void output(int n, int fibo)
 {
-  printf("The %dth fibonacci number is %d\n", n, fibo);
+  printf("The %dth fibonacci number is %d\n",n,fibo);
 }
 int main()
 {
   int n = input();
   int fibo = find_fibo(n);
-  output(n, fibo);
+  output(n,fibo);
   return 0;
 }

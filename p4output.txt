@@ -57,5 +57,5 @@ find_fibo (n=15) at p4original.c:11
 (gdb) c
 Continuing.
 The 15th fibonacci number is 377
-[Inferior 1 (process 1454) exited normally]
+[Inferior 1 (process 3716) exited normally]
 (gdb) 
